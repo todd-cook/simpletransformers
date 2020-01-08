@@ -314,7 +314,7 @@ class QuestionAnsweringModel:
             }
 
         if args['wandb_project']:
-            argwandb.init(project=args['wandb_project'], config={**args}, **args['wandb_kwargs'])
+            wandb.init(project=args['wandb_project'], config={**args}, **args['wandb_kwargs'])
             wandb.watch(self.model)
 
         model.train()

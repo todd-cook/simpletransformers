@@ -54,11 +54,10 @@ from simpletransformers.classification.transformer_models.xlnet_model import XLN
 from simpletransformers.classification.transformer_models.distilbert_model import DistilBertForSequenceClassification
 from simpletransformers.classification.transformer_models.albert_model import AlbertForSequenceClassification
 from simpletransformers.classification.transformer_models.camembert_model import CamembertForSequenceClassification
+import wandb
 
 logger = logging.getLogger(__name__)
 logger.addHandler(logging.NullHandler())
-
-import wandb
 
 
 class ClassificationModel:
